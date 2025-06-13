@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>needit_fulfillment</internal_name>
-        <label_cache>[{"name":"Created_1.current","label":"Trigger➛NeedIt Record","reference":"x_58872_needit_needit","reference_display":"NeedIt","type":"reference","base_type":"reference","attributes":{}},{"name":"731d646a-4826-42e3-9e08-91093334ab4a.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_requested_for.manager","label":"Trigger➛NeedIt Record➛Requested for➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"}]</label_cache>
+        <label_cache>[{"name":"Created_1.current.u_requested_for.manager","label":"Trigger➛NeedIt Record➛Requested for➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"731d646a-4826-42e3-9e08-91093334ab4a.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger➛NeedIt Record","reference":"x_58872_needit_needit","reference_display":"NeedIt","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
         <master_snapshot>c5cde7c7dba823004d5d56086896197a</master_snapshot>
         <master_snapshot_digest/>
         <name>NeedIt Fulfillment</name>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2d9aa78bdbe423004d5d560868961968</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>NeedIt Fulfillment</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_hub_flow_2d9aa78bdbe423004d5d560868961968</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-13 02:15:07</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:43:41</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
@@ -305,7 +305,7 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
         <attributes/>
-        <comment>Set State to Awaiting Approval and assign to Beth Anglin</comment>
+        <comment>Set State to Awaiting Approval.</comment>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="NeedIt Fulfillment">2d9aa78bdbe423004d5d560868961968</flow>
@@ -316,13 +316,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-13 01:57:37</sys_created_on>
         <sys_id>218848ee9346a250b9fbb2ddfaba1058</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-13 02:03:23</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:43:41</sys_updated_on>
         <ui_id>df7b2232-b56b-48d8-aea3-225dbf36f64f</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1VXU/bMBT9K1Weq8ppPkj7xoaQ+jCQYOKFbpFj31BLjpPZTqGr+t937SSlMIYYY5qQ1odU9/p+nHPvkX29DSizolYLZSxVDC43ZsGDeQBFUaQlOeIFzaYRITFPeJKSLM1maThLkmAcCBcXAyfhLExZFEbRlJBpFodFGhXhlEcUIMQ4RSvASA2s1hztNZWtc2y3HzVQCzwPJ6zVGpTd7fCcC9NIurnqw9DDVkJyPA/m11/GQUM1VrSgg/n20ZHdNJBLWoDExJOatRUWHS1OfgPtkH0xwH0M3/VAm/fVc+GceOTwhGQcwJ0FxQHblVQaGAcVVZzaWm+CudUtOpA1P1dys49YCWU7phW9M+I71o+JiysBqbF+Cnsz7yc0DKcWDM4bt8XOY2khh8nVsq3UWUfBzRZK2kp7MNvWYD1oHGQHokNYXq7q24uh36lQnl2PVtaMyr1FrdWiaC0Ytw6Q4IdS0aYR6iZvdL0WPhmhVJMbicaklPUt9jTiRk069U1wQHRyiv4T776iWjgSn7AMJu88+fxb6/p2NHrAuefsCed+URhqmBaNPcbCa+hh7sZ/qvMieU45bHYvlAMw91q/y5MsO5rmCoAL2//9rPUz9C/sqxX/2bUenXWtXwr7QfIvaPSaf+DrJZ+8meSzfyT5HtE70/xfUzqZPntHHkjEi9scqBwbWli2hEQ8jL9S42jh9W7rzrddDnpfBvNl8AHsanSscD5qGYyXXRV/Eqc8juk0orMSwlkWEoLN8csYzUiapj7cr9yHm43Jcafau50h+AvLPPHcvEsOr7wuoEIiFkYd95fvfyhwKkBy84Qghvuib5Cv+wb7Z/LNLo0wJf73/7V8w9fyyw/6B3ICFwoAAA==</values>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8HPwchx7Dp5GwuBPCyFdvSlK0aWrhOBLHuynCYL+e+7suU0TbfSdRljML8Y3Y9zz7k66H7vUWZEqRaqNlQxuN3VC+5NPciyLM7JFc9oMgoJGfOIRzFJ4mQSB5Mo8oaesHVj4CSYBDELgzAcETJKxkEWh1kw4iEFCLBO0QKwUgMrNcfzhsrGBvb7jxqoAZ4GPmu0BmUOB8xzUVeS7u5cGUbYWkiOeW96/zD0KqoR0YD2pvuzlNlVkEqagcTGWcmaAkEHi9kvsO27b3q65/TtDDxzh54KG8SU5ROQoQdbA4oDjsuprGHoFVRxakq986ZGNxhA1fxayd2xYi2U6ZQWdFuLb4g/JrYuB5TG3BaOx9RtqF9OKRhcV/YWu4ihmew3V8qmUMtOgt0t5LSR5mS3TY14UFnKlkTHML9dl483/by5UK06x1aWjMrjiRqjRdYYqO11gIR2KQWtKqFWaaXLjWibkUrhryQe/FyWjzizFivld+7zcUHUn2N81obvqBZWxCeEweZDKz792ti5nQxHOG01t4LT9qKwtGZaVOYDAm/A0TwMf9fnWfSac9jkySgnZJ68vk2jJLkapQqAC+N+L72+xPjCvNvxn+3owbIb/Vbaz5p/IsN5/lnMWT66mOWTv2R5x+gf8/wfczoZvfpGnlikNXd94nIcaOBLQ0jIg/FLd5+n32lyKBDUwKCDfTvrHmAuQPL6BzJ6l7sB6cYNOD7uF7N6EJP2+//GX/CNf/gOO+YaPM0IAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
@@ -413,10 +413,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-13 01:57:37</sys_created_on>
         <sys_id>7d8848ee9346a250b9fbb2ddfaba105c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-13 02:15:07</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:43:41</sys_updated_on>
         <ui_id>f0820068-b903-41bd-9c76-d1eb75dde89f</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1UTW/bMAz9K4XPjiF/JEtyKzYUGLCtQFv0shUGLdGJMFlyLTlpFuS/j/JHGmwJNgw97mY9UuR7FJ/3gWld3Tr7YK6tlSsdLL8+hYHUHqPvfaChwmAZcKOFdNLovAPCYAOq9YE7fG7Ruiuo68ZsUFBISFsr2D1ezuBrqUSDQ7caGqrpsAmW+19CbldjrqBARYXuXSP1iq5LQaeSQRkveMzTZJYmjCXzLC5maREnIgWElPLGi+9H8lefOiS8qMr3I9yOnUwjPK2YhQG+ONSC6C9LUBbDoAItwJlmd0QaBHGr1SuwltpRucAnv1j5g2on06lPLJE0cuyDx2M+jK6H+dpIjre1J9gjDgo13OFGtZX+0uvwQ8cSWuXGoRPSWqqHtSftWQyUyvu12d6NDW+k7gQOQWU4qOMJHI2haB1a/zCosKJCeUXvSMPJ/WPK7jJxqaKVokNUKrOlpn6TIuCeeEQzguiG8A8d/AiN9Co+Uxm63NMswEqed1tH5VxDEg7dWPLn1hPqBQ5S8n4alGB5I2t3TX02OLA+hL+v7Mm27vfv0ljMshlMsnkym2QJppMFsvlkEbNFmqYZFBlE/aqCyq0Dh4fDt5axVFxe8bcq+xa+WMC0nMZset4X2eycL8444rIZkj+YwT/fX3qBMfbfDKdmkDbvl3rQ1jX/Zy88+cXvO9h+bwRyaYnIg8c+jn95H9jRAkh+Cm1N891LeMUOPwGn3uBXLwYAAA==</values>
@@ -440,10 +440,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-13 01:57:37</sys_created_on>
         <sys_id>fd8848ee9346a250b9fbb2ddfaba105f</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-13 02:15:07</sys_updated_on>
+        <sys_updated_on>2025-06-13 02:43:41</sys_updated_on>
         <ui_id>d4d61231-564c-44c8-87de-7d4185f7d77b</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
